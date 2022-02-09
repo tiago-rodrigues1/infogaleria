@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Marina Abramovic",
+        "uri": "marina-abramovic",
+        "avatarSrc": "/images/marina_abramovic/marina-abramovic.jpg",
+        "about": "Great Woman",
+        "works": [
+            {
+                "name": "The Artist is Present",
+                "year": "2012",
+                "imgSrc": "/images/marina_abramovic/the-artist-is-present_2012.jpg"
+            },
+            {
+                "name": "AAA-AAA",
+                "year": "1978",
+                "imgSrc": "/images/marina_abramovic/AAA-AAA_1978.jpg"
+            },
+            {
+                "name": "Balkan Baroque",
+                "year": "1997",
+                "imgSrc": "/images/marina_abramovic/balkan-baroque_1997.jpg"
+            },
+            {
+                "name": "Light Dark",
+                "year": "1977",
+                "imgSrc": "/images/marina_abramovic/light-dark_1977.jpg"
+            }
+        ]
+    }
+]
