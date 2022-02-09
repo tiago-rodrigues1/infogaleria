@@ -4,12 +4,28 @@ import { useState, useEffect } from "react";
 
 import { Menu, X } from "react-feather";
 
-export function NavMenu() {
+import artists from "../../db/artists.json";
+
+const ArtistsLinks = () => {
 	const baseStyles = {
 		ul: "w-full flex flex-col gap-6 items-center",
 		li: "bg-main-light w-full h-14 grid place-items-center rounded-lg cursor-pointer border-2 border-transparent hover:border-secondary hover:text-secondary duration-200 text-center",
 	};
 
+	return (
+		<ul className={`${baseStyles.ul}`}>
+			{artists.map((artist, index) => (
+				<li key={`art${index}`} className={`${baseStyles.li}`}>
+					<Link href={`/artists/${artist.uri}`}>
+						<a>{artist.name}</a>
+					</Link>
+				</li>
+			))}
+		</ul>
+	);
+};
+
+export function NavMenu() {
 	const [isMenuOptionsVisible, setIsMenuOptionsVisible] = useState(false);
 	const [menuIcon, setMenuIcon] = useState(<Menu />);
 
@@ -45,26 +61,14 @@ export function NavMenu() {
 					} flex-col gap-8 z-20 h-full w-full`}
 				>
 					<h2 className="font-title font-bold text-lg">Artistas</h2>
-					<ul className={`${baseStyles.ul}`}>
-						<li className={`${baseStyles.li}`}>
-							<Link href="/">
-								<a>Marina Abramovic</a>
-							</Link>
-						</li>
-					</ul>
+					<ArtistsLinks />
 				</div>
 			</nav>
 
 			{/* Desktop */}
 			<nav className="hidden sm:flex flex-col gap-8 min-h-full w-1/4 bg-main-dark p-6 pt-16 text-primary">
 				<h2 className="font-title font-bold text-2xl">Artistas</h2>
-				<ul className={`${baseStyles.ul}`}>
-					<li className={`${baseStyles.li}`}>
-						<Link href="/">
-							<a>Marina Abramovic</a>
-						</Link>
-					</li>
-				</ul>
+				<ArtistsLinks />
 			</nav>
 		</>
 	);
