@@ -17,7 +17,9 @@ const ArtistsLinks = () => {
 			{artists.map((artist, index) => (
 				<li key={`art${index}`} className={`${baseStyles.li}`}>
 					<Link href={`/artists/${artist.uri}`}>
-						<a>{artist.name}</a>
+						<a className="w-full h-full grid place-items-center">
+							{artist.name}
+						</a>
 					</Link>
 				</li>
 			))}
