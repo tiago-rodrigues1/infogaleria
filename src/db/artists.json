@@ -3,7 +3,7 @@
         "name": "Marina Abramovic",
         "uri": "marina-abramovic",
         "avatarSrc": "/images/marina_abramovic/marina-abramovic.jpg",
-        "about": "Great Woman",
+        "about": "Marina Abramović é uma artista performática que iniciou sua carreira no início da década de 1970 em parceria com o seu marido Ulay e manteve-se em atividade desde então. Ela é considerada a “avó da arte da performance”, pois até hoje é uma das principais precursoras do movimento. Seu trabalho explora as relações entre o artista e a plateia, os limites do corpo e as possibilidades da mente.",
         "works": [
             {
                 "name": "The Artist is Present",
@@ -26,5 +26,34 @@
                 "imgSrc": "/images/marina_abramovic/light-dark_1977.jpg"
             }
         ]
+    },
+    {
+        "name": "Desvio Coletivo",
+        "uri": "desvio-coletivo",
+        "avatarSrc": "/images/desvio-coletivo/desvio-coletivo-integrantes.jpg",
+        "about": "Fundado em 2011, o grupo brasileiro Desvio Coletivo manifesta a arte por meio de fundamentos da arte urbana, da arte da performance e das artes visuais. Isso tudo, por meio de intervenções artísticas em diferentes espaços que possuem um peso crítico excepcional. São artistas do coletivo Leandro Brasilio, Marcos Bulhões, Marie Auip e Priscilla Toscano.",
+        "works": [
+            {
+                "name": "Cegos",
+                "year": "2016",
+                "imgSrc": "/images/desvio-coletivo/cegos_2015.jpg"
+            },
+            {
+                "name": "Concreto",
+                "year": "2016",
+                "imgSrc": "/images/desvio-coletivo/concreto_2016.jpg"
+            },
+            {
+                "name": "Interditados",
+                "year": "2015",
+                "imgSrc": "/images/desvio-coletivo/interditados_2015.jpg"
+            },
+            {
+                "name": "Matrimônios",
+                "year": "2016",
+                "imgSrc": "/images/desvio-coletivo/matrimonios_2016.jpg"
+            }
+        ]
     }
+    
 ]
